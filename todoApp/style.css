@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive sans-serif ;
+}
+body{
+    height:100vh;
+    background-image: url("https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-6/361294200_117157494774524_7818531040504806627_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=fRmyHxAP2JcAX-q5rge&_nc_ht=scontent.fktm19-1.fna&oh=00_AfAs0PF0Oj73TlHkOUSeqn3U_H8LHY9OPgjM8abZc_DAhg&oe=65FC1485");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+}
+#main-header{
+    border-radius: 5px;
+}
+#header-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #030202;
+}
+.container{
+    width:30%;
+    margin-top: 3.5em;
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width:70%;
+    }
+  }
+@media screen and (max-width: 650px) {
+    .container{
+        width:80%;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .container{
+        width:99%;
+        margin-top: 5em;
+    }
+  }
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem ;
+    border-bottom:4px solid rgb(249, 230, 146) ;
+}
+
+.content{
+    display:1 1 0%;
+    width:90%;
+}
+.item .content .text {
+	font-size: 1.125rem;
+	width: 100%;
+    border-color: transparent;
+}
+.item .content .text:hover {
+    cursor:context-menu;
+}
+.item .actions {
+	display: flex;
+}
+.item .actions button {
+	margin-left: 0.5rem;
+	font-weight: 700;
+    font-size:0.9rem;
+    padding:2px 6px;
+}
